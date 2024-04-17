@@ -1,0 +1,14 @@
+﻿@page
+@model BackendLab01.Pages.Quiz.QuizesModel
+@{
+}
+
+<ul>
+
+    @foreach (var e in Model.quizes)
+    {
+        <li>
+            <a asp-area="" asp-page="/Quiz/Item" asp-route-itemId="1" asp-route-quizId="1">@e</a>
+        </li>
+    }
+</ul>
