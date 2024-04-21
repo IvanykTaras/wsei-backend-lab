@@ -21,7 +21,7 @@ public class QuizUserService: IQuizUserService
         throw new NotImplementedException();
     }
 
-    public List<Quiz> FindAllQuiz()
+    public IEnumerable<Quiz> FindAllQuizzes()
     {
         return quizRepository.FindAll();
     }

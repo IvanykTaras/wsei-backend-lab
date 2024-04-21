@@ -6,7 +6,7 @@ public interface IQuizUserService
 {
     Quiz CreateAndGetQuizRandom(int count);
 
-    List<Quiz> FindAllQuiz();
+    IEnumerable<Quiz> FindAllQuizzes();
     Quiz? FindQuizById(int id);
 
     void SaveUserAnswerForQuiz(int quizId, int userId, int quizItemId, string answer);

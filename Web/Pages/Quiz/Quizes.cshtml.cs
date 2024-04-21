@@ -17,7 +17,7 @@ namespace BackendLab01.Pages.Quiz
         public List<int> quizes { get; set; }
         public void OnGet()
         {
-            quizes = _service.FindAllQuiz().Select( e => e.Id).ToList();
+            quizes = _service.FindAllQuizzes().Select( e => e.Id).ToList();
         }
     }
 }
